@@ -1,0 +1,62 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width" initial-state="1">
+        <style>
+            .d1{
+                width: 450px;
+                background-attachment: white;
+                padding-top: 10px;
+                padding: 40px;
+                margin: auto;
+                color: black;
+                margin-top: 2%;
+                border: 1px solid black;
+                background-color: lightcyan;
+            }
+            #fname,#lname,#email,#pwd{
+                width: 350px;
+            }
+            #phone{
+                width: 300px;
+            }
+            .d2{
+                margin-top: 20px;
+                width: 400px;
+                text-align: center;
+                align-items: center;
+                justify-content: center;
+                margin: auto;
+                background-color: lightgray;
+                border: 4px solid darkblue;
+            }
+        </style>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        
+    </head>
+    <body style="background-image: url('https://cdn.wallpapersafari.com/79/13/AIDrK4.jpg'); 
+    background-repeat: no-repeat; background-attachment: fixed; background-size: 1500px 1000px;">                   
+        <div class="d2" align="center">
+            <p style="color: darkred;">Hey Hello Glad to see you here looks like you are a new user
+            Please enter the required details given below to access the website</p>
+        </div>
+        <div class="d1">
+        <form action="/signupsubmit" method="get" class="form-group">
+            <b>Firstname</b> <input type="text" required name="fname" id="fname" class="form-control"><br>
+            <b>Lasttname </b>: <input type="text" required name="lname" id="lname" class="form-control"><br>
+            <b>Email :</b> <input type="email" required name="email" id="email" class="form-control"><br>
+            <b>Password : </b><input type="password" required name="pwd" id="pwd" class="form-control"><br>
+            <b>Mobile Number :</b> <input type="phone" required name="phone" id="phone" class="form-control"><br>
+           <b> of birth :</b><input type="date"  name="date" class="form-control"><br>
+            <b>Gender</b> : <input type="radio"  name="gen" >Male
+                     <input type="radio"  name="gen" >Female
+                     <input type="radio"  name="gen" >Others<br>
+            <input type="submit" value="signup" style="margin-left:auto ;margin-right:auto;width: 100px;
+            color: white; background-color: blue; height: 30px;">
+            <hr><br>
+            <p align="center">already have an account? then <a href="/signin" >signin</a></p>
+        </form>
+        </div>
+    </body>
+</html>
